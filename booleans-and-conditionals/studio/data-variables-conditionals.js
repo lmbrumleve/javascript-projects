@@ -2,7 +2,7 @@
 
 let date = "Monday 2019-03-18";
 let time = "10:05:34 AM";
-let astronautCount = 8;
+let astronautCount = 7;
 let astronautStatus = "ready";
 let averageAstronautMassKg = 80.7;
 let crewMassKg = astronautCount * averageAstronautMassKg;
@@ -32,8 +32,6 @@ if (astronautCount > 7) {
     preparedForLiftOff = false;
 }   else if (weatherStatus != "clear") {
     preparedForLiftOff = false;
-}   else {
-    preparedForLiftOff = true;
 }
 
 
@@ -106,9 +104,8 @@ preparedForLiftOff = false;
 
 
 // Verify shuttle launch can proceed based on above conditions
-console.log(preparedForLiftOff);
 
-if (preparedForLiftOff = false) {
+if (preparedForLiftOff === false) {
     console.log("Not prepared for lift off. Launch operations shut down.");
 } else {
     console.log("All systems are a go! Initiating space shuttle launch sequence.");
