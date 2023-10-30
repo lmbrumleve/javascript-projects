@@ -21,10 +21,8 @@
           let text = "Are you sure you want to abort the mission?";
             if (confirm(text) == true) {
             text = "Mission aborted! Space shuttle returning home";
-            } else {
-                text = "The shuttle is on the ground."
+            document.getElementById("statusReport").innerHTML = text;
             }
-        document.getElementById("statusReport").innerHTML = text;
         };
         </script>
     </body>
