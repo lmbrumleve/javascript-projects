@@ -23,8 +23,7 @@ takeoffButton.addEventListener("click", function() {
         shuttleBackground.style.backgroundColor = "blue"; 
         spaceShuttleHeight.innerHTML = 10000;
         rocket.style.bottom = "10px";
-        bottom = 10;
-
+        verticalPosition = 10;
     }
 })
 
@@ -36,6 +35,9 @@ landButton.addEventListener("click", function() {
     spaceShuttleHeight.innerHTML = 0;
     rocket.style.bottom = "0px"
     rocket.style.left = "212.5px"
+    verticalPosition = 0;
+    horizontalPosition = 212.5;
+
 })
 
 abortMissionButton.addEventListener("click", function () {
@@ -45,6 +47,8 @@ abortMissionButton.addEventListener("click", function () {
         spaceShuttleHeight.innerHTML = 0;
         rocket.style.bottom = "0px"
         rocket.style.left = "212.5px"
+        verticalPosition = 0;
+        horizontalPosition = 212.5;
     }
 })
 
